@@ -74,3 +74,13 @@ func RepeatRune(r rune, times int) []rune {
 	}
 	return buffer
 }
+
+type OrderRel uint
+
+const (
+	ORDR_GREATER_EQUAL OrderRel = iota
+	ORDR_GREATER
+	ORDR_EQUAL
+	ORDR_LESS
+	ORDR_LESS_EQUAL
+)
